@@ -21,11 +21,7 @@ function AuthComponent(){
   return (
     <div>
       <h1>Click on the checkbox to get  authenticated</h1>
-      {
-        toggle ? 
-        <p>You are now authenticated, you can proceed</p> : 
-        <p>you are not authenticated</p>
-      }
+      <p className="authText">{toggle ? "You are now authenticated, you can proceed": "you are not authenticated"}</p>
       
       <input type="checkbox" onClick={()=>{setToggle(!toggle)}}/>I am not a robot
     </div>
